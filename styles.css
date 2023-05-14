@@ -136,7 +136,7 @@ ul li.checked::before {
     position: fixed;
     z-index: 1;
     background-color: #27214ab3;
-    background-image: url("/resources/boliviainteligente-k0KZPlWZPyE-unsplash.jpg");
+    background-image: url("resources/boliviainteligente-k0KZPlWZPyE-unsplash.jpg");
     overflow-x: hidden;
     transition: 1s;
     padding-top: 5px;
