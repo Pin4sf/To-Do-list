@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #352f5b;
+    background-image: url("/resources/25557.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* #background {
+    position: absolute;
+    width: 500px;
+    height: 100vh;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(5px);
+    animation: popup 2s ease;
+} */
+
+h1 {
+    color: #e31490;
+    font-size: 50px;
+    font-family: 'Pacifico', sans-serif, cursive;
+    font-style: italic;
+}
+
+.container {
+    max-width: 400px;
+}
+input[type="text"],
+input[type="text"]:focus {
+    color: #fff;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+}
+.todos li {
+    font-size: 30px;
+    background: #27214ab3;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    font-size: 18px;
+    font-family: 'Righteous', sans-serif, cursive;
+    transition: 0.2s;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:nth-child(odd) {
+    background: #4a4083eb;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+    background: #690ed1;
+}
+
+/* When clicked on, add a background color and strike out text */
+
+ul li.checked {
+    background: #5c40ca;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+ul li span.checked::before {
+    content: "";
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 3px 3px 0;
+    top: 15px;
+    left: 15px;
+    transform: rotate(45deg);
+    height: 18px;
+    width: 10px;
+}
+
+ul li.checked::before {
+    content: "";
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 3px 3px 0;
+    top: 15px;
+    left: 15px;
+    transform: rotate(45deg);
+    height: 18px;
+    width: 10px;
+}
+.delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px 16px 13px 16px;
+    border-radius: 5px;
+}
+
+.delete:hover {
+    background-color: #f53813eb;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    color: rgb(238, 10, 10);
+}
+
+.delete {
+    cursor: pointer;
+}
+
+.filtered{
+    display: none !important;
+}
+
+#myUL{
+    list-style-type: none;
+}
+
+#myInput{
+    font-size: 28px;
+    backdrop-filter:initial;
+    font-family: 'Righteous', sans-serif, cursive;;
+}
+
+#mySidebar{
+    position: fixed;
+    z-index: 1;
+    background-color: #27214ab3;
+    background-image: url("/resources/boliviainteligente-k0KZPlWZPyE-unsplash.jpg");
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 5px;
+    color: #ff04ab;
+}
+
+#Git{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    color: #ff04ab;
+}
+
+#OpenNav{
+    position: absolute;
+    background-color: #27214ab3;
+    color: #f2f3f2;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+div#container {
+    position: relative;
+    width: auto;
+    margin: 0 auto;
+    backdrop-filter: blur(5px);
+}
+
+

@@ -1,0 +1,95 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+        rel="shortcut icon"
+        href="/resources/favicon_io/favicon.ico"
+        type="image/x-icon"
+    />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Todo List</title>
+    </head>
+    <body>
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large"
+            onclick="w3_close()">Close &times;</button>
+            <a href="#" class="w3-bar-item w3-button">Important&nbsp;&nbsp;  <i class='fas fa-star fa-sm' style='color:#e83e8c'></i></a>
+            <a href="#" class="w3-bar-item w3-button">Planned&nbsp;&nbsp;  <i class='fas fa-calendar-check fa-sm ' style='color:#e83e8c'></i></a>
+            <a href="#" class="w3-bar-item w3-button">Task &nbsp;&nbsp; <i class='fas fa-tasks fa-sm' style='color:#e83e8c'></i> </a>
+            <a href="#" class="w3-bar-item w3-button">Completed&nbsp;&nbsp;  <i class='fas fa-check fa-sm' style='color:#e83e8c'></i></a>
+            <a href="#" class="w3-bar-item w3-button" id="Git">Github&nbsp;&nbsp; </a>
+        </div>
+        
+        <div id="main">
+            <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+            <div class="w3-container">
+
+
+        <div id="container">
+        <div class="container">
+            <header class="text-center text-light my-4">
+                <h1 class="mb-4">Todo List</h1>
+                <form class="search">
+                    <input
+                        class="form-control m-auto"
+                        type="text"
+                        name="search"
+                        placeholder="Search item in Todos"
+                        url="#"
+                    />
+                </form>
+            </header>
+            <div id="background">
+                <ul class="list-group todos mx-auto text-light" id="myUL">
+                    <!-- <li
+                        class="list-group-item d-flex justify-content-between align-items-center checked"
+                    >
+                        play mariokart
+                        <i class="far fa-trash-alt delete"></i>
+                    </li>
+                    <li
+                        class="list-group-item d-flex justify-content-between align-items-center"
+                    >
+                        defeat ganon in zelda
+                        <i class="far fa-trash-alt delete"></i>
+                    </li>
+                    <li
+                        class="list-group-item d-flex justify-content-between align-items-center"
+                    >
+                        make a veggie pie
+                        <i class="far fa-trash-alt delete"></i>
+                    </li> -->
+                </ul>
+
+                <form class="add text-center my-4">
+                    <label class="text-light" id="myInput"
+                        >Add a new todo...</label
+                    >
+                    <input
+                        class="form-control m-auto"
+                        type="text"
+                        name="add"
+                        placeholder="Start Typing Here ..."
+                    />
+                </form>
+            </div>
+        </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
