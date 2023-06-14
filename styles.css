@@ -167,7 +167,6 @@ div#container2 {
     position: relative;
     width: 400px;
     margin: 0 auto;
-    backdrop-filter: blur(2px);
 }
 
 .animate-charcter
