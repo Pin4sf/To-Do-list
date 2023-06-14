@@ -25,6 +25,7 @@
         <title>Todo List</title>
     </head>
     <body>
+        <div id="container1">
         <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
             <button class="w3-bar-item w3-button w3-large"
             onclick="w3_close()">Close &times;</button>
@@ -40,10 +41,16 @@
             <div class="w3-container">
 
 
-        <div id="container">
-        <div class="container">
+        <div id="container2">
+        <div class="container2">
             <header class="text-center text-light my-4">
-                <h1 class="mb-4">Todo List</h1>
+                <div class="container">
+                    <div class="row">
+                      <div class="col-md-12 text-center">
+                        <h3 class="animate-charcter"> TO DO LIST</h3>
+                      </div>
+                    </div>
+                  </div>
                 <form class="search">
                     <input
                         class="form-control m-auto"
@@ -90,6 +97,23 @@
             </div>
         </div>
         </div>
+    </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.153.0/three.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.rings.min.js"></script>
+        <script src="three.r134.min.js"></script>
+<script src="vanta.rings.min.js"></script>
+<script>
+VANTA.RINGS({
+  el: "#container1",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00
+})
+</script>
         <script src="app.js"></script>
     </body>
 </html>
